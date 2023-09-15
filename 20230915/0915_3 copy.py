@@ -17,3 +17,24 @@ else:
             break
     else:
         print("소수입니다.")
+
+
+# pythonic하게
+for divider in range(2, numb):
+    if numb % divider == 0:
+        print('no')
+        break
+else:
+    print("prime")
+
+if numb == 1:
+    is_prime = False
+else:
+    for i in range(2, numb):
+        if numb % i is 0:
+            is_prime = False
+            break
+    else:
+        is_prime = True
+
+

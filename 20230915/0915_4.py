@@ -1,4 +1,3 @@
-# for i in range(101):
 
 sum = 0
 
@@ -16,7 +15,6 @@ for numb in range(1, 100 + 1):
                 is_prime = False
                 break
         else:
-            print(numb)
             # 이렇게 찍으면서 확신을 얻는다.
             is_prime = True
 

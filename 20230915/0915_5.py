@@ -1,10 +1,11 @@
+import random
+
 value = int(input("숫자를 입력하세요: "))
-
-
+target = random.randrange(1, 101)
 
 for i in range(3):
-    
-    if value> target:
+
+    if value > target:
         print('up')
     elif value < target:
         print('down')
@@ -13,4 +14,5 @@ for i in range(3):
         break
 else:
     print("failed")
-    
+
+print("target is", target)
