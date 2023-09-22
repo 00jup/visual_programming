@@ -1,18 +1,26 @@
 import random
 
-value = int(input("숫자를 입력하세요: "))
 target = random.randrange(1, 101)
 
-for i in range(3):
 
-    if value > target:
-        print('up')
-    elif value < target:
-        print('down')
-    else:
-        print('correct')
-        break
-else:
-    print("failed")
+low = 0
+high = 100
+mid = 50
+
+
+def binary_search(target):
+    global low, high, mid
+    if target < mid:
+        high = mid
+        mid = (low + mid) // 2
+        binary_search(mid)
+    elif target > mid:
+        low = mid
+        mid = (high + mid) // 2
+        binary_search(mid)
+    elif target == mid:
+        print("mid is", mid)
+
 
 print("target is", target)
+binary_search(target)
