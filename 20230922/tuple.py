@@ -60,3 +60,7 @@ location = a.index(True) if True in a else None
 
 
 print(a.count(False))
+
+b = (1, 2, 2)
+a = (2, 2, 2)
+print(a*b)
