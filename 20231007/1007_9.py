@@ -6,6 +6,6 @@ _number = []
 for i in range(len(number_list)):
     duplicate_number[i] = number_list.count(i)
     if number_list.count(i) > max_duplicate:
-        _number.append(i+1)
+        _number.append(i)
 
 print("중복된 수: "+' '.join(map(str, _number)))
