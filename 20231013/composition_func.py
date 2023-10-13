@@ -10,15 +10,19 @@ def g(a, b, c, x):
 
 
 values = input().split()
+
 for i in range(len(values)):
     values[i] = float(values[i])
 
 # for value in values:
+#     value = float(value)
 #     print(f(float(value), 1, 2, 3), end=' ')
 
-print(f(g(*values), 1, 2, 3))
-print(f(*values[:3], g(*values)))
+# print(f(g(*values), 1, 2, 3))
 
+
+# print(*values[:3])
+print(f(*values[:3], g(*values)))
 
 
 # def f(a, b, c, x), a:???????????
