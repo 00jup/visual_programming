@@ -12,7 +12,7 @@ def is_prime(num):
 
 
 def f_prime(N):
-    for num in range(2, N):
+    for num in range(2, N+1):
         if is_prime(num) == True:
             result = num
 

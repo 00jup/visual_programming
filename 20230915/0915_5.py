@@ -1,4 +1,4 @@
-import random
+5import random
 
 target = random.randrange(1, 101)
 

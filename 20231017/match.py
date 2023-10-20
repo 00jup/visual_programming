@@ -1,5 +1,5 @@
-is_alive = False
-
+is_alive = 2
+status = 400
 match status:
     case 400 if is_alive:
         print("Bad")
@@ -7,6 +7,5 @@ match status:
         print("Not found")
     case 418 | 419 | 420:
         print("I'm a teapot")
-    case 415 or 400:
-        print("or")
     case _:
+        print("hi")
