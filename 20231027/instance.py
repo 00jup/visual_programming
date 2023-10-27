@@ -17,3 +17,7 @@ print(me.number_of_arms)
 me.number_of_arms = 3
 
 print(me.number_of_arms)
+
+me2 = Human("kim", 70)
+
+print(me2.number_of_arms)
