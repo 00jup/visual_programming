@@ -1,10 +1,12 @@
 class Account:
     money = 100000
 
-    def __init__(self):
-        self.money = 0
+    def __init__(self, money):
+        self.money = money
+    # def __init__(self):
+    #     self.money = 0
 
-    def get_total_deposit_static(self):
+    def get_total_deposit_static():
         return Account.money
 
     @classmethod
