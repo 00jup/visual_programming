@@ -26,3 +26,4 @@ b.use(1000)
 
 print(a.deposit)
 print(b.deposit)
+print(Tmoney)
