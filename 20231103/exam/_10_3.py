@@ -1,6 +1,7 @@
 class Course:
-
-    def __init__(self, code, grade):
+    # 공유되어야 하는가 아니면 독자적으로 가져야 하는지 생각하기.
+    def __init__(self, name, code, grade):
+        self.name = name
         self.code = code
         self.grade = grade
         match grade:
@@ -27,10 +28,25 @@ class Course:
         return "{:<4} {:<2} {:<4}".format(self.code, self.grade, self.gpa)
 
 
-a = Course(1001, 'A+')
-b = Course(1002, 'B')
-c = Course(1001, 'C')
+a = Course('python', 1001, 'A+')
+b = Course('c', 1002, 'B')
+c = Course('python', 1001, 'C')
 
-print(repr(a))
-print(repr(b))
 print(repr(c))
+print(c)
+print(a)
+print(b)
+
+(a.gpa + b.gpa + c.gpa) / 3
+
+history = []
+history.append(a)
+history.append(b)
+history.append(c)
+print(history)
+
+socure = 0
+for course in history:
+    scoure += course.gpa
+    print(course)
+gpa /= len(history)

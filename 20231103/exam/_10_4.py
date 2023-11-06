@@ -34,15 +34,46 @@ c = Course(1001, 'C')
 print(repr(a))
 print(repr(b))
 print(repr(c))
+class CourseHistory:
+
+    def __init__(self):
+        self.history = []
+
+    def get_gpa(self):
+        gpa = 0
+        for course in self.history:
+            gpa += course.gpa
+        return gpa / len(self.history)
+    
+    def add_course(self, course):
+        self.history.append(course)
+
+A = CourseHistory()
+a.add_course(a)
+b.add_course(a)
+a.add_course(c)
+
+print(a.get_gap(), b.get_gpa())
 
 class CourseManager:
-    def __init__(self, Course):
-        pass
+    # def __init__(self, Course):
+    #     pass
+    def __init__(self, x, y, z):
+        self.x, self.y, self.z = x, y, z
+        self.average = (self.x.gpa + self.y.gpa + self.z.gpa)/3
 
-    def average(self, Course):
-        pass
+    def average(self):
+        return self.average
 
-    def search(self, Course):
-        pass
+    def search(self, number):
+        if self.x.code == number:
+            return "{:<4} {:<2} {:<4}".format(self.x.code, self.x.grade, self.x.gpa)
+        elif self.y.code == number:
+            return "{:<4} {:<2} {:<4}".format(self.y.code, self.y.grade, self.y.gpa)
+        elif self.z.code == number:
+            return "{:<4} {:<2} {:<4}".format(self.z.code, self.z.grade, self.z.gpa)
 
-CourseManager(a, b, c)
+
+manager = CourseManager(a, b, c)
+print(manager.average())
+print(manager.search(1002))
