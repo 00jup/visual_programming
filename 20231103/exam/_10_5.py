@@ -38,8 +38,5 @@ class Complex:
 
 
 x = Complex(1, -1)
-print(x)
 y = Complex(2, 3)
 print(x+y)
-A = list(map(str, input("식을 입력하세요 : ").split()))
-Imagine_numb(A)

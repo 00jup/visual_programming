@@ -34,6 +34,8 @@ c = Course(1001, 'C')
 print(repr(a))
 print(repr(b))
 print(repr(c))
+
+
 class CourseHistory:
 
     def __init__(self):
@@ -44,9 +46,10 @@ class CourseHistory:
         for course in self.history:
             gpa += course.gpa
         return gpa / len(self.history)
-    
+
     def add_course(self, course):
         self.history.append(course)
+
 
 A = CourseHistory()
 a.add_course(a)
@@ -54,6 +57,7 @@ b.add_course(a)
 a.add_course(c)
 
 print(a.get_gap(), b.get_gpa())
+
 
 class CourseManager:
     # def __init__(self, Course):

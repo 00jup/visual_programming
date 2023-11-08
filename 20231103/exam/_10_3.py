@@ -45,8 +45,9 @@ history.append(b)
 history.append(c)
 print(history)
 
-socure = 0
+score = 0
 for course in history:
-    scoure += course.gpa
+    score += course.gpa
     print(course)
-gpa /= len(history)
+score /= len(history)
+print(score)
