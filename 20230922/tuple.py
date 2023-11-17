@@ -59,8 +59,6 @@ print(a[0:2])
 
 # # 와우우우우우
 # location = a.index(True) if True in a else None
-
-
 # print(a.count(False))
 
 # b = (1, 2, 2)
