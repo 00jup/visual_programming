@@ -1,5 +1,4 @@
-from test import test
-
+import test
 
 try:
     print(test.Test.string)
