@@ -1,9 +1,7 @@
 import requests
-from bs4 import BeautifulSoup
 
 hamlet_url = "http://ruby.bastardsbook.com/files/fundamentals/hamlet.txt"
 response = requests.get(hamlet_url)
-
 dictionary = {}
 
 for element in response.text.split():
@@ -13,7 +11,7 @@ for element in response.text.split():
 sorted_dictionary = dict(sorted(
     dictionary.items(), key=lambda x: x[1], reverse=True))
 
-with open("result.csv", 'w') as f:
+with open("web_result.csv", 'w') as f:
     for key, value in sorted_dictionary.items():
         f.write(f"{key},{value}\n")
 
