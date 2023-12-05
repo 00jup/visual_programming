@@ -27,7 +27,7 @@ for index in range(array.shape[0]):
     new_data = array[index]
     result[index] = new_data[new_data > avg[index]].size
 
-# print(result)
+print(result)
 
 # for index in range(array.shape[0]):
 #     new_data = array[index]

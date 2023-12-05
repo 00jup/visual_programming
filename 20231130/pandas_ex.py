@@ -1,4 +1,7 @@
-x = 1
-y = 2
+import numpy as np
 
-print(id(x), id(y))
+array = np.array([[3, 2, 5],
+                  [1, 7, 4],
+                  [9, 6, 8]])
+
+print(np.sort(array, axis=0))
