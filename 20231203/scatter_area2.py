@@ -24,4 +24,3 @@ axes.axhline(min)
 
 axes.set_yticks([max, mean, min], ['max', 'mean', 'min'])
 plt.show()
-9

@@ -42,5 +42,3 @@ for index in range(array.shape[0]):
 print(np.zeros((3, 1)))
 print(np.zeros((1, 3)))
 print(np.zeros(3))
-
-

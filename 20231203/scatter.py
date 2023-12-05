@@ -3,12 +3,6 @@ import numpy as np
 
 x = np.random.random((20))
 y = np.random.random((5, 20))
-# y = []
-# y[0] = np.random.random(20)
-# y[1] = np.random.random(20)
-# y[2] = np.random.random(20)
-# y[3] = np.random.random(20)
-# y[4] = np.random.random(20)
 
 fig, ax = plt.subplots()
 ax.scatter(x, y[0], s=50, label='y0')
