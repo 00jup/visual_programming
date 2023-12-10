@@ -6,7 +6,7 @@ with open("hamlet.txt", 'r') as f:
     while (data != ''):
         row = data.strip().split(" ")
         for index in range(len(row)):
-            if row[index] not in dictionary and row:
+            if row[index] not in dictionary:
                 dictionary[row[index]] = 0
             dictionary[row[index]] += 1
         data = f.readline()
