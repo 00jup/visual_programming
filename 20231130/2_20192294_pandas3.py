@@ -1,19 +1,15 @@
 import pandas as pd
-
+import matplotlib.pyplot as plt
 titanic = pd.read_csv("titanic.csv")
 
-print(titanic)
-
-row = titanic.loc[1, :]
-print(f"{row} \n")
 
 # survived_people = titanic.loc[:, ["Survived"]]
-survived_people = titanic.groupby("Sex")[["Survived"]].sum()
+survived_people = titanic[["Sex", "Survived", "PassengerId"]].dropna()
+print(survived_people)
 
-for column in survived_people:
-    print(column)
-    print(survived_people[column])
-    print()
+survived_people = survived_people.groupby(["Sex", "Survived"]).count()
 
-print(survived_people.head(1))
-print(survived_people.tail(1))
+print(survived_people)
+survived_people.plot.bar()
+
+plt.show()
