@@ -15,4 +15,4 @@ data = pd.DataFrame(np.random.random((4, 4)), columns=["A", "B", "C", "D"])
 # for index, columns in data.iterrows():
 #     print(columns)
 
-print(data[data.columns[0]])8
+print(data[data.columns[0]])

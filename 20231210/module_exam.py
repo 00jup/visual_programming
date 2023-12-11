@@ -1,5 +1,3 @@
-import fibo
+from fibo import fib
 
-A = fibo.fib(1000)
-
-print(A)
+print(fib(100))
