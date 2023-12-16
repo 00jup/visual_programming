@@ -14,8 +14,8 @@ axes.set_xlim([0, 6])
 axes.set_xticks([0, 1, 2, 3, 4, 5, 6], [
     'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'])
 
-max = data.max(axis=0).max()
-min = data.min(axis=0).min()
+max = data.max(axis=1).max()
+min = data.min(axis=1).min()
 mean = (max+min)/2
 
 axes.axhline(max)

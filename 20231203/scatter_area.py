@@ -14,7 +14,7 @@ axes[1].set_title("2nd Data")
 axes[2].set_title("3rd Data")
 plt.tight_layout()
 
-axes[0].fill_between(data.index, 0, data['A'].mean(), color='k', alpha=0.1)
+axes[0].fill_between(data.index, 0, data[['A']].mean(), color='k', alpha=0.1)
 axes[1].fill_between(data.index, 0, data['B'].mean(), color='k', alpha=0.1)
 axes[2].fill_between(data.index, 0, data['C'].mean(), color='k', alpha=0.1)
 # 그래프의 미관을 위해 limit 설정

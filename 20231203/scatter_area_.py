@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-data = pd.DataFrame(np.random.random((100000, 3)), columns=['A', 'B', 'C'])
-
+data = pd.DataFrame(np.random.random((100, 3)), columns=['A', 'B', 'C'])
+print(data)
 fig, axes = plt.subplots(1, 3, figsize=(12, 4))
 
 for index in range(data.shape[1]):
